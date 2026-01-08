@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mafia Test Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; background: #111; color: white; font-family: sans-serif; text-align: center; }
+        canvas { display: block; background: #222; margin: 20px auto; border: 2px solid #d4af37; }
+        #status-bar { padding: 10px; background: #000; color: #d4af37; font-weight: bold; }
+        button { padding: 15px 30px; font-size: 18px; background: #d4af37; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div id="status-bar">
+        STATUS: <span id="connection">CONNECTING...</span> | 
+        PLAYERS ONLINE: <span id="online-count">0</span>
+    </div>
+
+    <h1>MAFIA TEST SERVER</h1>
+    <p>Нажми на кнопку, чтобы отправить сигнал всем игрокам</p>
+    
+    <button id="test-btn">CAPTURE CITY</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
